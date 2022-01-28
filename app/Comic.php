@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comic extends Model
 {
-    protected $fillabel = [
-
+    protected $fillable = [
         'title',
         'author',
         'release_date',
