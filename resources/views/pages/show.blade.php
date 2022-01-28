@@ -8,8 +8,10 @@
     
         <p>
             Author: {{ $comic -> author}} <br>
-            Released on : {{ $author -> release_date}} <br>
+            Released on : {{ $comic -> release_date}} <br>
             Pages: {{ $comic -> pages}}
         </p>
+
+        <a href="{{ route('home') }}">GO BACK</a>
     </section>
 @endsection
