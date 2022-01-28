@@ -20,8 +20,8 @@ class CreateComicsTable extends Migration
             $table -> string('title');
             $table -> string('author');
             $table -> date('release_date');
-            $table -> count('pages');
-            
+            $table -> integer('pages');
+
             $table -> timestamps();
         });
     }
