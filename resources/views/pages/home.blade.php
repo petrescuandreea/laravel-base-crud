@@ -1,6 +1,19 @@
 @extends('layouts.main-layout')
 @section('content')
-    <h2>
-        Home
-    </h2>
+    <section>
+        <h2>Comics list:</h2>
+
+        <ul>
+            @foreach ($comics as $comic)
+
+                <li>
+                    <a href="#"> 
+                        {{ $comic -> title }} 
+                    </a> 
+                    - {{ $comic -> release_date }}
+                </li>
+                
+            @endforeach
+        </ul>
+    </section>
 @endsection
